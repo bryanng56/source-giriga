@@ -1,0 +1,34 @@
+//Libraries
+@import 'library/swiper-bundle.min';
+
+//Mixins
+@import 'mixins/breakpoints';
+@import 'mixins/hover';
+@import 'mixins/reset-list';
+
+//Configuración guias de estilo
+@import 'config/colors';
+@import 'config/fonts';
+@import 'config/z-index';
+@import 'config/header-size';
+
+
+
+//Estilos base
+@import 'base/normalize';
+@import 'base/base';
+@import 'base/reusable';
+
+//Bloques
+@import 'blocks/nav';
+
+@import 'blocks/home';
+@import 'blocks/button';
+@import 'blocks/popular';
+@import 'blocks/menu-carta';
+
+@import 'blocks/footer';
+
+@import 'blocks/fullscreen';
+@import 'blocks/scroll-bar';
+@import 'blocks/scroll-up';

@@ -1,0 +1,54 @@
+.fullscreen{
+    background-color: rgba(17, 16, 16, 0.938);
+    width: 100vw;
+    height: 100vh; 
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+
+    &__close{
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        width: 40px;
+        z-index: 99999;
+        cursor: pointer;
+        fill:white;
+    } 
+    
+    &__swiper{height: 100%}   
+
+    &__picture{
+        height: 95%;
+        width: 100%;
+        max-width: 1100px;
+        padding: 60px 40px;
+        margin: auto;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & img{max-height: 100%}
+    }  
+
+    &__arrows{
+        color: aliceblue;
+    }
+
+    & .swiper-pagination{
+        bottom: 20vh;
+        @media screen and (max-height:550px){bottom: 10vh}
+        @media screen and (min-width:400px){bottom: 8vh}
+        @include tablet{bottom: 5vh}
+    }
+
+    & .swiper-pagination-bullet{
+        background-color: var(--first-color)
+    }
+}   
+
+

@@ -1,0 +1,72 @@
+.header{
+    width: 100%;
+    background-color: var(--body-color); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    border-bottom: 1px solid white;
+    transition: box-shadow .3s, background .4s;
+
+    /* Change header background */
+    &-bg{
+        box-shadow: 0 2px 8px hsla(19, 64%, 24%, .1);
+    }
+}
+
+.dark-theme .header{border-bottom: none} 
+
+.main{
+    overflow: hidden; /*For animation*/
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.section{
+    padding-block: 5rem 1rem;
+    @include laptop{
+        padding-block: 7rem 1.5rem;
+    }
+
+    &__title, 
+    &__subtitle {
+        text-align: center;
+    }
+
+    &__title{
+        font-family: var(--title-font);
+        font-size: var(--h1-font-size);
+        margin-bottom: 1.5rem;
+    }
+    
+    &__subtitle{
+        display: block;
+        font-size: var(--h2-font-size);
+        font-family: var(--subtitle-font);
+        color: var(--first-color);
+        margin-bottom: 0.5rem;
+        @include laptop{
+            margin-bottom: .75rem;
+        }
+    }
+}
+
+/*=============== LAYOUT ===============*/
+.container,
+.bg-container{
+    max-width: 1000px;
+    width: 90%; 
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mobile{
+        grid-template-columns: .7fr;
+        justify-content: center;
+    }
+}
+
+.big-container{
+    max-width: 1100px;
+    @include desktop{
+        max-width: 1200px;
+    }
+}

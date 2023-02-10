@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriga Comida Fusión</title><!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="images/favicon.webp" type="image/x-icon"><!--=============== CSS ===============-->
+    <link rel="stylesheet" href="css/styles.css?t=1676053678355">
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container"><a class="nav__logo" href="#"><img class="logo" src="images/logo-black.webp" alt="logo"></a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link active-link" href="#home">Inicio  </a></li>
+            <li class="nav__item"><a class="nav__link" href="#popular">Popular  </a></li>
+            <li class="nav__item"><a class="nav__link" href="#menu">Menú</a></li>
+          </ul>
+          <svg class="nav__close" viewBox="0 0 24 24" id="nav-close">
+            <path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"></path>
+          </svg><img class="nav__leaf-1" src="images/leaf-branch-4.webp" alt="nav"><img class="nav__leaf-2" src="images/leaf-branch-3.webp" alt="nav">
+        </div>
+        <div class="nav__buttons"><img class="nav__theme" src="images/moon.svg" alt="" id="theme-button">
+          <svg class="nav__toggle" viewBox="0 0 24 24" id="nav-toggle">
+            <path class="nav__toggle-img" d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path>
+          </svg>
+        </div>
+      </nav>
+    </header><!--=============== MAIN ===============-->                
+    <main class="main"><!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="container"><img class="home__img" src="images/home-restaurant.webp" alt="Restaurante Giriga Fusión">
+          <div class="home__data">
+            <h1 class="home__title">Disfruta de la comida fusión</h1>
+            <p class="home__description">Una mezcla de ingredientes y condimentos de una diversidad cultural y como resultado una explosión de sabores y colores!</p><a class="button" href="https://glovoapp.com/es/es/barcelona/giriga-fusion-barcelona/" target="_blank">Pide ahora<img src="images/arrow-right.svg" alt="Flecha"></a>
+          </div>
+        </div><img class="home__leaf-1" src="images/leaf-branch-1.webp" alt="home image"><img class="home__leaf-2" src="images/leaf-branch-4.webp" alt="home image">
+      </section><!--==================== POPULAR ====================-->
+      <section class="popular section" id="popular"><span class="section__subtitle">Un paseo por las calles <br>de Latinoamérica </span>
+        <h2 class="section__title">Platos más demandados</h2>
+        <div class="container swiper popular__swiper">
+          <div class="swiper-wrapper" id="swiper-element">
+            <article class="swiper-slide popular__card"><img class="popular__img" src="images/popular-campero.webp" alt="Pollo campero" data-index-number="1">
+              <h3 class="popular__name">Plato #1</h3>
+              <p class="popular__description">Pollo marinado al estilo campero, acompañado de patacones, arroz, salsa de frijoles y ensalada.</p>
+            </article>
+            <article class="swiper-slide popular__card"><img class="popular__img" src="images/popular-patitas-calamar.webp" alt="Patitas de calamar" data-index-number="2">
+              <h3 class="popular__name">Plato #2</h3>
+              <p class="popular__description">Patitas de calamar con tostones y sofrito de tomates cherry.</p>
+            </article>
+            <article class="swiper-slide popular__card"><img class="popular__img" src="images/popular-salmon-gratinado.webp" alt="Salmón gratinado" data-index-number="3">
+              <h3 class="popular__name">Plato #3</h3>
+              <p class="popular__description">Salmón gratinado con mayonesa de ajos, patacones, ensalada de col y cilantro.  </p>
+            </article>
+            <article class="swiper-slide popular__card"><img class="popular__img popular__img--paella" src="images/popular-paella.webp" alt="Paella" data-index-number="4">
+              <h3 class="popular__name">Plato #4</h3>
+              <p class="popular__description">Paella de ternera, de pollo o de costillas de cerdo ibérico con patacones y ensalada verde (para 2 personas).</p>
+            </article>
+            <article class="swiper-slide popular__card"><img class="popular__img" src="images/popular-costilla-cerdo.webp" alt="Costillas de cerdo" data-index-number="5">
+              <h3 class="popular__name">Plato #5</h3>
+              <p class="popular__description">Costillas de cerdo con salsa barbacoa, arroz gallo pinto, yuca frita, ensalada de col y aguacate. </p>
+            </article>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev popular__arrows"></div>
+          <div class="swiper-button-next popular__arrows"></div>
+        </div>
+      </section><!--==================== MENU - CARTA ====================-->
+      <section class="menu section" id="menu"><span class="section__subtitle">Un sutil equilibrio<br>a ritmo de temporada</span>
+        <h2 class="section__title"> Nuestro Menú</h2>
+        <div class="container">
+          <div class="menu__data"><img class="menu__img" src="images/menu-black-1.webp" alt="Carta del menú 1"><img class="menu__img" src="images/menu-black-2.webp" alt="Carta del menú 2"><img class="menu__img" src="images/menu-black-3.webp" alt="Carta del menú 3"><img class="menu__img" src="images/menu-black-4.webp" alt="Carta del menú 4"></div><a class="button menu__button" href="https://glovoapp.com/es/es/barcelona/giriga-fusion-barcelona/" target="_blank">Pide ahora<img src="images/arrow-right.svg" alt="Flecha"></a><img class="menu__spinach" src="images/spinach-leaf.webp" alt="Recently leaf">
+        </div>
+      </section><!--==================== FULLSCREEN ====================-->
+      <div class="fullscreen" id="fullscreen">
+        <svg class="fullscreen__close" viewBox="0 0 24 24" id="fullscreen-close">
+          <path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"></path>
+        </svg>
+      </div>
+    </main><!--=============== FOOTER ===============-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content"><a class="footer__logo" href="#"> <img class="logo" src="images/logo-footer-black.webp" alt="Logo Image"></a>
+          <div class="footer__item">
+            <h3 class="footer__title">Dirección</h3><a class="footer__links" href="https://goo.gl/maps/mew8sPSiDmLYLMqR6" target="_blank"> C/ de Sant Joan<br>de Malta, 125</a>
+            <p class="footer__links">08018 Barcelona</p><a class="footer__links" href="tel:+34930381485" title="Llamar">Tél: 930 381 485</a>
+          </div>
+          <div class="footer__item">
+            <h3 class="footer__title">Redes Sociales</h3>
+            <div class="footer__social"><a class="footer__social-link" href="https://instagram.com/girigafusion?igshid=YmMyMTA2M2Y=" target="blank">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"></path>
+                </svg></a></div>
+          </div>
+        </div>
+        <div class="footer__info">
+          <div class="footer__payment"><img src="images/footer-card-1.png" alt="Footer image"><img src="images/footer-card-2.png" alt="Footer image"><img src="images/footer-card-3.png" alt="Footer image"><img src="images/footer-card-4.png" alt="Footer image"></div><span class="footer__copy">&#169; Copyright BryanGM. All rights reserved.</span>
+        </div><img class="footer__onion" src="images/spring-onion.webp" alt="Footer image"><img class="footer__spinach" src="images/spinach-leaf.webp" alt="Footer image"><img class="footer__leaf" src="images/leaf-branch-4.webp" alt="Footer image">
+      </div>
+    </footer><!--=============== SCROLL UP ===============--><a class="scrollup" href="#" id="scroll-up">
+      <svg viewBox="0 0 24 24">
+        <path d="M13 7.828V20h-2V7.828l-5.364 5.364-1.414-1.414L12 4l7.778 7.778-1.414 1.414L13 7.828z"></path>
+      </svg></a><!--=============== MAIN JS ===============-->
+    <script src="js/scripts-min.js?t=1676053678355"> </script>
+  </body>
+</html>

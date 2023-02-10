@@ -1,0 +1,98 @@
+.nav{
+    position: relative;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include tablet{ column-gap: 3rem}
+
+    &__logo{width: 180px}
+    & .change-logo{content: url("../images/logo-white.webp")}
+
+    &__theme,
+    &__toggle,
+    &__close{
+        fill: var(--title-color);
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+    & .change-icon-theme{content: url('../images/sun.svg')}
+    
+    &__menu{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        background-color: var(--body-color);
+        width: 100%;
+        box-shadow: 0 8px 20px hsla(19, 64%, 24%, .1);
+        padding-block: 3.5rem;
+        transition: top .4s;
+        @include tablet{
+            position: static;
+            background-color: transparent;
+            box-shadow: none;
+            width: auto;
+            margin-left: auto;
+        }
+    }
+
+    & .show-menu{top: 0}
+
+    & .active-link{color: var(--first-color)}
+
+    &__toggle{margin-left: 8px;}
+
+    &__toggle,
+    &__close,
+    &__leaf-1,
+    &__leaf-2{@include tablet{display: none}}
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2rem;
+        @include tablet{
+            flex-direction: row;
+            column-gap: 3rem;
+        }
+    }  
+
+    &__link{
+        color: var(--title-color);
+        font-weight: var(--font-medium);
+        transition: color .4s;
+    }
+    
+    @include hover{
+        &__link:hover{color: var(--firts-color)}
+    }
+
+    &__close{
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+    }
+
+    &__leaf-1,
+    &__leaf-2{
+        position: absolute;
+        opacity: .3;
+    }
+
+    &__leaf-1{
+        width: 100px;
+        top: .75rem;
+        left: -2rem;
+        transform: rotate(165deg);
+    }
+
+    &__leaf-2{
+        width: 50px;
+        bottom: 0;
+        right: -1rem;
+        transform: rotate(-30deg);
+    }
+}

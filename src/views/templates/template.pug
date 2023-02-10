@@ -1,0 +1,91 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Giriga Comida Fusión
+
+        <!--=============== FAVICON ===============-->
+        link(rel="shortcut icon" href="images/favicon.webp" type="image/x-icon")
+        <!--=============== CSS ===============-->
+        link(rel="stylesheet", href="css/styles.css")
+
+    body
+        header#header.header
+            nav.nav.container
+                a(href="#").nav__logo
+                    img(src="images/logo-black.webp", alt="logo").logo
+
+                #nav-menu.nav__menu
+                    ul.nav__list
+                        li.nav__item: a(href="#home").nav__link.active-link Inicio  
+                        li.nav__item: a(href="#popular").nav__link Popular  
+                        li.nav__item: a(href="#menu").nav__link Menú
+                    
+                    //- Close Button
+                    svg(viewBox="0 0 24 24")#nav-close.nav__close
+                        path(d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z")
+
+
+                    img(src="images/leaf-branch-4.webp", alt="nav").nav__leaf-1
+                    img(src="images/leaf-branch-3.webp", alt="nav").nav__leaf-2
+                
+                .nav__buttons
+                    //- Icon Moon - Theme change button
+                    img(src="images/moon.svg", alt="")#theme-button.nav__theme
+                    //- Icon Toggle
+                    svg(viewBox="0 0 24 24")#nav-toggle.nav__toggle
+                        path(d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z").nav__toggle-img
+
+
+        <!--=============== MAIN ===============-->                
+        main.main
+            block contentWeb
+
+
+        <!--=============== FOOTER ===============-->
+        footer.footer
+            .container
+                .footer__content
+                    a(href="#").footer__logo 
+                        img(src="images/logo-footer-black.webp", alt="Logo Image").logo
+                        
+                    .footer__item
+                        h3.footer__title Dirección
+                        a(href="https://goo.gl/maps/mew8sPSiDmLYLMqR6" target="_blank").footer__links  C/ de Sant Joan
+                            br
+                            | de Malta, 125
+                        p.footer__links 08018 Barcelona
+                        a(href="tel:+34930381485" title="Llamar").footer__links Tél: 930 381 485
+                        
+                    .footer__item
+                        h3.footer__title Redes Sociales
+                        .footer__social
+                            a(href="https://instagram.com/girigafusion?igshid=YmMyMTA2M2Y=" target='blank').footer__social-link
+                                svg(viewBox="0 0 24 24")
+                                    path(d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z")
+                            
+                .footer__info
+                    .footer__payment
+                        img(src="images/footer-card-1.png", alt="Footer image")
+                        img(src="images/footer-card-2.png", alt="Footer image")
+                        img(src="images/footer-card-3.png", alt="Footer image")
+                        img(src="images/footer-card-4.png", alt="Footer image")
+                    span.footer__copy &#169; Copyright BryanGM. All rights reserved.
+                    
+                img(src="images/spring-onion.webp", alt="Footer image").footer__onion
+                img(src="images/spinach-leaf.webp", alt="Footer image").footer__spinach
+                img(src="images/leaf-branch-4.webp", alt="Footer image").footer__leaf
+
+
+
+        <!--=============== SCROLL UP ===============-->
+        a(href="#")#scroll-up.scrollup
+            svg(viewBox="0 0 24 24")
+                path(d="M13 7.828V20h-2V7.828l-5.364 5.364-1.414-1.414L12 4l7.778 7.778-1.414 1.414L13 7.828z")
+
+
+        <!--=============== MAIN JS ===============-->
+        script(src="js/scripts-min.js") 
+        

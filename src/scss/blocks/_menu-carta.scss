@@ -1,0 +1,60 @@
+.menu{
+    & .container{position: relative}
+    
+    &__spinach{
+        width: 25px;
+        position: absolute;
+        top: -10rem;
+        right: 1.1rem;
+        transform: rotate(30deg);
+    }
+
+    &__data{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        row-gap: 4rem;
+        column-gap: 8rem;
+        padding-top: 3rem;
+        margin-bottom: 50px;
+    }
+
+    &__img{
+        max-width: 350px;
+        width: 100%;
+    }
+
+    & .change-menu-1{content: url("../images/menu-white-1.webp")}
+    & .change-menu-2{content: url("../images/menu-white-2.webp")}
+    & .change-menu-3{content: url("../images/menu-white-3.webp")}
+    & .change-menu-4{content: url("../images/menu-white-4.webp")}
+
+    &__button{
+        display: flex;
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__leaf-1,
+    &__leaf-2{
+        position: absolute;
+        opacity: .2;
+    }
+
+    &__leaf-1{
+        width: 80px;
+        top: 19rem;
+        left: -1rem;
+        transform: rotate(15deg);
+    }
+    
+    &__leaf-2{
+        width: 40px;
+        right: -1rem;
+        bottom: 12rem;
+        transform: rotate(-30deg);
+    }
+
+}

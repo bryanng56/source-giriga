@@ -1,0 +1,24 @@
+each page, index in pages
+    if page == pageActive
+        li.main-menu__item
+            if index==0
+                a(href='https://bryanng56.github.io/garcinstal/').main-menu__link.main-menu__link--active= page
+            else
+                a(href=`https://bryanng56.github.io/garcinstal/${page.toLowerCase()}`).main-menu__link.main-menu__link--active= page
+
+    else
+        li.main-menu__item
+            if index==0
+                a(href='https://bryanng56.github.io/garcinstal/').main-menu__link= page
+            else
+                a(href=`https://bryanng56.github.io/garcinstal/${page.toLowerCase()}`).main-menu__link= page
+
+//- =========== Change lenguage ==============                
+li.main-menu__item-last
+    .main-menu__dropdown
+        span ES
+        i.fas.fa-chevron-down.main-menu__dropdown-icon
+        
+    ul.main-menu-language
+        li.main-menu__item.main-menu__item--language: a(href="#").main-menu__link Español
+        li.main-menu__item.main-menu__item--language: a(href="#").main-menu__link Ingles

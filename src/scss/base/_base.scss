@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color); 
+    color: var(--text-color);
+    margin-top: var(--header-height);
+    transition: background-color 0.4s; /* for dark mode animation */
+}
+
+h1,h2,h3,h4{
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+}
+
+ul{
+    @include reset-list;
+}
+
+a{
+    text-decoration: none;
+}
+/*Mirar estas ultimas clasesessssssssssssssss*/
+button,
+input{
+    border: none;
+    outline: none;
+}
+
+button{
+    cursor: pointer;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
